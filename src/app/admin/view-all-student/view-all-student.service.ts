@@ -8,7 +8,7 @@ import { switchMap, catchError } from 'rxjs/operators';
 })
 export class ViewAllStudentService {
 
-  private apiUrl = 'http://localhost:4050/api/student/';
+  private apiUrl = 'http://localhost:27017/api/student/';
 
   constructor(private httpClient: HttpClient) { }
 

@@ -85,7 +85,7 @@ export class ProfileComponent implements OnInit {
     const formData = new FormData();
     formData.append('uploadedImage', this.fileUploadForm.get('uploadedImage')!.value);
 
-    this.http.post<any>('http://localhost:4050/api/users/updateProfilePic', formData).subscribe(response => {
+    this.http.post<any>('http://localhost:27017/api/users/updateProfilePic', formData).subscribe(response => {
         alert("Successfully Updated !!");
         if (response.statusCode === 200) {
           // Reset the file input

@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 })
 export class AdminService {
 
-  private apiUrl = 'http://localhost:4050/api/student/';
+  private apiUrl = 'http://localhost:27017/api/student/';
 
   constructor(private httpClient: HttpClient, private router: Router) { }
 
@@ -61,7 +61,7 @@ export class AdminService {
   }
 
   boysSuperDeluxRooms() {
-    return this.httpClient.get<any>(`http://localhost:4050/api/boysRooms/superDeluxeRooms`).pipe
+    return this.httpClient.get<any>(`http://localhost:27017/api/boysRooms/superDeluxeRooms`).pipe
     (
       switchMap(({ total }) => {
         return of(total);
@@ -74,7 +74,7 @@ export class AdminService {
   }
 
   boysDeluxRooms() {
-    return this.httpClient.get<any>(`http://localhost:4050/api/boysRooms/deluxeRooms`).pipe
+    return this.httpClient.get<any>(`http://localhost:27017/api/boysRooms/deluxeRooms`).pipe
     (
       switchMap(({ total }) => {
         return of(total);
@@ -87,7 +87,7 @@ export class AdminService {
   }
 
   boysStandardRooms() {
-    return this.httpClient.get<any>(`http://localhost:4050/api/boysRooms/standardRooms`).pipe
+    return this.httpClient.get<any>(`http://localhost:27017/api/boysRooms/standardRooms`).pipe
     (
       switchMap(({ total }) => {
         return of(total);
@@ -100,7 +100,7 @@ export class AdminService {
   }
 
   girlsSuperDeluxRooms() {
-    return this.httpClient.get<any>(`http://localhost:4050/api/girlsRooms/superDeluxeRooms`).pipe
+    return this.httpClient.get<any>(`http://localhost:27017/api/girlsRooms/superDeluxeRooms`).pipe
     (
       switchMap(({ total }) => {
         return of(total);
@@ -113,7 +113,7 @@ export class AdminService {
   }
 
   girlsDeluxRooms() {
-    return this.httpClient.get<any>(`http://localhost:4050/api/girlsRooms/deluxeRooms`).pipe
+    return this.httpClient.get<any>(`http://localhost:27017/api/girlsRooms/deluxeRooms`).pipe
     (
       switchMap(({ total }) => {
         return of(total);
@@ -126,7 +126,7 @@ export class AdminService {
   }
 
   girlsStandardRooms() {
-    return this.httpClient.get<any>(`http://localhost:4050/api/girlsRooms/standardRooms`).pipe
+    return this.httpClient.get<any>(`http://localhost:27017/api/girlsRooms/standardRooms`).pipe
     (
       switchMap(({ total }) => {
         return of(total);
@@ -139,7 +139,7 @@ export class AdminService {
   }
 
   findHostelPriceDetails() {
-    return this.httpClient.get<any>(`http://localhost:4050/api/prices/findHostelPriceDetails`).pipe
+    return this.httpClient.get<any>(`http://localhost:27017/api/prices/findHostelPriceDetails`).pipe
     (
       switchMap(({ price }) => {
         // console.log('found price detalis done ', price);
@@ -152,7 +152,7 @@ export class AdminService {
   }
 
   updatePriceDetails(priceDetails: any) {
-    return this.httpClient.post<any>(`http://localhost:4050/api/prices/updatePriceDetails`,priceDetails)
+    return this.httpClient.post<any>(`http://localhost:27017/api/prices/updatePriceDetails`,priceDetails)
     .pipe(
       switchMap(({ msg }) => {
         return of(msg);
@@ -165,7 +165,7 @@ export class AdminService {
   }
 
   getAllUsers() {
-    return this.httpClient.get<any>(`http://localhost:4050/api/users/AllUser`).pipe
+    return this.httpClient.get<any>(`http://localhost:27017/api/users/AllUser`).pipe
     (
       switchMap(({ users }) => {
         return of(users);
@@ -177,7 +177,7 @@ export class AdminService {
   }
 
   updateUser(user: any) {
-    return this.httpClient.post<any>(`http://localhost:4050/api/users/userUpdate`,user)
+    return this.httpClient.post<any>(`http://localhost:27017/api/users/userUpdate`,user)
     .pipe(
       switchMap(({ msg }) => {
         // console.log(msg);
