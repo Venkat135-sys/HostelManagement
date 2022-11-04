@@ -10,7 +10,7 @@ import { Prices } from '../prices';
 export class HostelDetailService {
 
   private prices$ = new Subject<Prices>();
-  private apiUrl = 'http://localhost:4050/api/';
+  private apiUrl = 'http://localhost:27017/api/';
 
   constructor(private httpClient: HttpClient) {}
 

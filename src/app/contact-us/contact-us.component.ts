@@ -13,7 +13,7 @@ import { ContactUsService } from './contact-us.service';
 })
 export class ContactUsComponent implements OnInit {
 
-  private apiUrl = 'http://localhost:4050/api/contactUs/';
+  private apiUrl = 'http://localhost:27017/api/contactUs/';
   user: User;
 
   contactHistory: any = [];

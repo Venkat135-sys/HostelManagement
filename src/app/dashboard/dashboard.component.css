@@ -6,3 +6,54 @@ img.img-fluid {
     width: 249px;
     object-fit: contain;
 }
+
+p{
+    font: 100;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.view{
+    width: 30%;  
+    display: flex;
+    
+}
+
+
+.a,.b,.c,.d,.e{
+    width: 20%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+    
+}
+.b{
+    margin-left: 145px;
+}
+.c{
+    margin-left: 145px;
+
+}
+.d{
+    margin-left: 145px;
+
+}
+.e{
+    margin-left: 165px;
+
+}
+.com{
+
+    text-align: center;
+}
+.v{
+    display: block;
+    margin: auto;
+    display: flex;
+    margin-left:200px;
+}
+.a1{
+    border: 3px solid black;
+    width: 15%;
+    font-size: xx-large;
+    padding: 5px;
+    border-radius: 20px 15px;
+    
+}

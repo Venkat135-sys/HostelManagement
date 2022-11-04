@@ -15,7 +15,7 @@ interface UserDto {
 })
 export class AuthService {
   private user$ = new Subject<User>();
-  private apiUrl = 'http://localhost:4050/api/auth/';
+  private apiUrl = 'http://localhost:27017/api/auth/';
 
   constructor(private httpClient: HttpClient, private tokenStorage: TokenStorageService) { }
   
