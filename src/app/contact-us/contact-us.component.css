@@ -34,7 +34,9 @@
   font-family: "Montserrat", sans-serif;
   color: #8d97ad;
   font-weight: 300;
-  /*background-image: url('../../assets/img/13.png');*/
+  background-image: url('../../assets/img/13.png');
+  background-repeat: no-repeat;
+  
   height: 400px;
   
   margin-bottom: 300px;
