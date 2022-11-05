@@ -5,7 +5,7 @@
     "ng": "ng",
     "start:server": "node server/index.js",
     "server": "nodemon server",
-    "start": "ng serve",
+    "start": "ng mongoose.js",
     "build": "ng build",
     "build:prod": "npm run build -- --prod",
     "watch": "ng build --watch --configuration development",
