@@ -6,3 +6,17 @@
     margin-right: 5rem!important;
     margin-left: 5rem!important;
 }
+
+table{
+    background-color:	#b9baa3;
+}
+tbody{
+    font-size:large;
+    font-weight:300px;
+    
+}
+.accordion-button{
+    color:darkolivegreen;
+    font-size: large;
+    font-weight:bold;
+}

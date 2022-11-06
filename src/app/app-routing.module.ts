@@ -30,7 +30,7 @@ const routes: Routes = [
   { 
     path: 'hostel-detail', 
     pathMatch:'full',
-    component: HostelDetailComponent 
+    component: HostelDetailComponent
   },
   { 
     path: 'contactUs', 
