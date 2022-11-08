@@ -37,11 +37,11 @@ export class StudentAddComponent implements OnInit {
     lastName: new FormControl('',[Validators.required]),
     fatherName: new FormControl('',[Validators.required]),
     gender: new FormControl('',[Validators.required]),
-    mobileNo: new FormControl('',[Validators.required, Validators.pattern("[7-9]{1}[0-9]{9}")]),
+    mobileNo: new FormControl('',[Validators.required, Validators.pattern("[6-9]{1}[0-9]{9}")]),
     fatherMobileNo: new FormControl('',[Validators.required, Validators.pattern("[7-9]{1}[0-9]{9}")]),
     email: new FormControl('',[Validators.required, Validators.email]),
     studentAdharCard: new FormControl('',[Validators.required, Validators.pattern("[0-9]{12}")]),
-    fatherAdharCard: new FormControl('',[Validators.required, Validators.pattern("[0-9]{12}")]),
+    fatherAdharCard: new FormControl('',[Validators.required, Validators.pattern("[6-9]{1}[0-9]{9}")]),
     currentAdress: new FormControl('',[Validators.required]),
     collegeName: new FormControl('',[Validators.required])
   });

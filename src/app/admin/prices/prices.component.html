@@ -10,16 +10,16 @@
                         <h2 class="title">Prices</h2>
                 </div>
                 <div class="card-body">  
-                    <h4 class="text-danger text-right mx-2 font-weight-bold">click twice to edit details</h4>
+                   
                     <form [formGroup]="priceDetails">
                         <div class="form-row">
-                            <div class="name">Super Delux Room :</div> 
+                            <div class="name">Super Deluxe Room :</div> 
                             <div class="value" (dblclick)="this.priceDetails.get('superDeluxe')!.enable();">
                                 <input class="input--style-6" type="number" name="superDeluxe" formControlName="superDeluxe" [disabled]="true">
                             </div>
                         </div>
                         <div class="form-row">
-                            <div class="name">Delux Room :</div>
+                            <div class="name">Deluxe Room :</div>
                             <div class="value" (dblclick)="this.priceDetails.get('deluxe')!.enable();">
                                 <input class="input--style-6" type="number" id="deluxe" name="deluxe" formControlName="deluxe">
                             </div>
@@ -30,12 +30,12 @@
                                 <input class="input--style-6" type="number" id="standard" name="standard" formControlName="standard">
                             </div>
                         </div>
-                        <div class="form-row">
+                        <!--<div class="form-row">
                             <div class="name">Food Package :</div>
                             <div class="value" (dblclick)="this.priceDetails.get('foodPackage')!.enable();">
                                 <input class="input--style-6" type="number" id="foodPackage" name="foodPackage" formControlName="foodPackage">
                             </div>
-                        </div>
+                        </div>-->
                         <div class="form-row">
                             <div class="name">Electricity Bill per Unit :</div>
                             <div class="value" (dblclick)="this.priceDetails.get('electricityBillPerUnit')!.enable();">
