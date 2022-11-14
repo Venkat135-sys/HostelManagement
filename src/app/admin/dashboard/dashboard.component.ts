@@ -22,11 +22,11 @@ export class DashboardComponent implements OnInit {
   constructor(private router: Router, private adminService: AdminService) { 
 
     this.adminService.boysSuperDeluxRooms().subscribe((total) => { this.availability.boysSuperDeluxeRooms = total.length; });
-    this.adminService.boysDeluxRooms().subscribe((total) => { this.availability.boysDeluxeRooms = total.length; });
-    this.adminService.boysStandardRooms().subscribe((total) => { this.availability.boysStandardRooms = total.length; });
+    this.adminService.boysDeluxRooms().subscribe((total) => { this.availability.boysDeluxeRooms = total.length/2; });
+    this.adminService.boysStandardRooms().subscribe((total) => { this.availability.boysStandardRooms = total.length/3; });
     this.adminService.girlsSuperDeluxRooms().subscribe((total) => { this.availability.girlsSuperDeluxeRooms = total.length; });
-    this.adminService.girlsDeluxRooms().subscribe((total) => { this.availability.girlsDeluxeRooms = total.length; });
-    this.adminService.girlsStandardRooms().subscribe((total) => { this.availability.girlsStandardRooms = total.length; });
+    this.adminService.girlsDeluxRooms().subscribe((total) => { this.availability.girlsDeluxeRooms = total.length/2; });
+    this.adminService.girlsStandardRooms().subscribe((total) => { this.availability.girlsStandardRooms = total.length/3; });
 
   }
 

@@ -28,8 +28,8 @@
                                 <div class="col-md-12">
                                     <select class="form-select mt-3" name="roomCategory" formControlName="roomCategory" (change)="genderOrRoomCatSelected()" required>
                                           <option selected disabled value="">Room Category</option>
-                                          <option value="Super Deluxe">Super Delux Room</option>
-                                          <option value="Deluxe">Delux Room</option>
+                                          <option value="Super Deluxe">Super Deluxe Room</option>
+                                          <option value="Deluxe">Deluxe Room</option>
                                           <option value="Standard">Standard Room</option>
                                    </select>
                                 </div>
@@ -50,33 +50,33 @@
                                 </div>
 
                                 <div class="col-md-12">
-                                    <input class="form-control" type="text" name="fatherName" formControlName="fatherName" placeholder="Father Name" required>
+                                    <input class="form-control" type="text" name="fatherName" formControlName="fatherName" placeholder="Any other Name" required>
                                 </div>
                                 
                                 <div class="col-md-12">
-                                    <input class="form-control" type="number" name="mobileNo" formControlName="mobileNo" placeholder="Mobile Name" required>
+                                    <input class="form-control" type="number" name="mobileNo" formControlName="mobileNo" placeholder="Mobile Number" required>
                                 </div>
-                                <div class="col-md-12 text-right" *ngIf="mobileNo!==null && mobileNo.invalid"><small style="color:red;">please enter valid mobile number</small></div> 
+                                <div class="col-md-12 text-right" *ngIf="mobileNo!==null && mobileNo.invalid"><small class="text-warning">please enter valid mobile number</small></div> 
 
                                 <div class="col-md-12">
-                                    <input class="form-control" type="number" name="fatherMobileNo" formControlName="fatherMobileNo" placeholder="Father Mobile Name" required>
+                                    <input class="form-control" type="number" name="fatherMobileNo" formControlName="fatherMobileNo" placeholder="confirm mobile number" required>
                                 </div>
-                                <div class="col-md-12 text-right" *ngIf="fatherMobileNo!==null && fatherMobileNo.invalid"><small style="color:red;">please enter valid mobile number</small></div> 
+                                <div class="col-md-12 text-right" *ngIf="fatherMobileNo!==null && fatherMobileNo.invalid"><small class="text-warning">please enter valid mobile number</small></div> 
 
                                 <div class="col-md-12">
                                     <input class="form-control" type="email" name="email" formControlName="email" placeholder="E-mail Address" required>
                                 </div>
-                                <div class="col-md-12 text-right" *ngIf="email!==null && email.invalid"><small style="color:red;">please enter valid Email</small></div> 
+                                <div class="col-md-12 text-right" *ngIf="email!==null && email.invalid"><small class="text-warning">please enter valid Email</small></div> 
 
                                 <div class="col-md-12">
                                     <input class="form-control" type="number" name="studentAdharCard" formControlName="studentAdharCard" placeholder="Student Adhar Card Number" required>
                                 </div>
-                                <div class="col-md-12 text-right" *ngIf="studentAdharCard!==null && studentAdharCard.invalid"><small style="color:red;">please enter valid Adhar number</small></div> 
+                                <div class="col-md-12 text-right" *ngIf="studentAdharCard!==null && studentAdharCard.invalid"><small class="text-warning">please enter valid Aadhar number</small></div> 
 
                                 <div class="col-md-12">
-                                    <input class="form-control" type="number" name="fatherAdharCard" formControlName="fatherAdharCard" placeholder="Father Adhar Card Number" required>
+                                    <input class="form-control" type="number" name="fatherAdharCard" formControlName="fatherAdharCard" placeholder="Father Mobile  Number" required>
                                 </div>
-                                <div class="col-md-12 text-right" *ngIf="fatherAdharCard!==null && fatherAdharCard.invalid"><small style="color:red;">please enter valid Adhar number</small></div> 
+                                <div class="col-md-12 text-right" *ngIf="fatherAdharCard!==null && fatherAdharCard.invalid"><small class="text-warning">please enter valid Mobile number</small></div> 
                                 
                                 <div class="col-md-12">
                                     <input class="form-control" type="text" name="currentAdress" formControlName="currentAdress" placeholder="Current Address" required>

@@ -98,12 +98,12 @@
       font-weight: 500;
   }
   .sidebar .nav-link:hover {
-      color: red;
+      color:	#eb7900;
   }
   a.nav-link {
     color: burlywood;
   }
 
   a.nav-link.dkpActive {
-    color: red;
+    color:	#ff9800;
   } 

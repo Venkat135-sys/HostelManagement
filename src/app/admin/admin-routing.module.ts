@@ -61,11 +61,11 @@ const routes: Routes = [
           pathMatch:'full',
           component: UsersComponent
         },
-        {
+        /*{
           path:'roomStructure',
           pathMatch:'full',
           component: RoomStructureComponent
-        }
+        }*/
       ]
   }
 ];
