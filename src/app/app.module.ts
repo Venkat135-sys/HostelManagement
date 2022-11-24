@@ -16,6 +16,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { ProfileComponent } from './profile/profile.component';
 
 
+
 // import { SigninComponent } from './auth/signin/signin.component';
 // import { SignupComponent } from './auth/signup/signup.component';
 
@@ -29,6 +30,7 @@ import { ProfileComponent } from './profile/profile.component';
     FooterComponent,
     NotFoundComponent,
     ProfileComponent,
+    
     
   ],
   imports: [

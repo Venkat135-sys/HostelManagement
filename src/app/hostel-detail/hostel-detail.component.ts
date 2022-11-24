@@ -30,8 +30,8 @@ export class HostelDetailComponent implements OnInit {
     this.adminService.boysDeluxRooms().subscribe((total) => { this.availability.boysDeluxeRooms = total.length; });
     this.adminService.boysStandardRooms().subscribe((total) => { this.availability.boysStandardRooms = total.length; });
     this.adminService.girlsSuperDeluxRooms().subscribe((total) => { this.availability.girlsSuperDeluxeRooms = total.length; });
-    this.adminService.girlsDeluxRooms().subscribe((total) => { this.availability.girlsDeluxeRooms = total.length; });
-    this.adminService.girlsStandardRooms().subscribe((total) => { this.availability.girlsStandardRooms = total.length; });
+    this.adminService.girlsDeluxRooms().subscribe((total) => { this.availability.girlsDeluxeRooms = total.length/2; });
+    this.adminService.girlsStandardRooms().subscribe((total) => { this.availability.girlsStandardRooms = total.length/3; });
   }
   
   ngOnInit(): void {

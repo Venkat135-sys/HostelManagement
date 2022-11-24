@@ -8,6 +8,7 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { ProfileComponent } from './profile/profile.component';
 
+
 const routes: Routes = [
   {
     path:'',
@@ -31,6 +32,7 @@ const routes: Routes = [
     path: 'hostel-detail', 
     pathMatch:'full',
     component: HostelDetailComponent
+    
   },
   { 
     path: 'contactUs', 
